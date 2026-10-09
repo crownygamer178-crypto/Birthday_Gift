@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bia G! 🌙🌻</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Jameel+Noori+Nastaleeq&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 40%, #fbcfe8 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #4a3b4c;
+        }
+        .urdu-text {
+            font-family: 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+            direction: rtl;
+            line-height: 2.2;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+        }
+        @keyframes pulseGlow {
+            0%, 100% { filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.6)); }
+            50% { filter: drop-shadow(0 0 30px rgba(251, 191, 36, 0.9)); }
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        @keyframes flameFlicker {
+            0%, 100% { transform: scale(1) rotate(-2deg); opacity: 0.9; }
+            50% { transform: scale(1.15) rotate(2deg); opacity: 1; filter: drop-shadow(0 0 8px #f59e0b); }
+        }
+        .animate-float { animation: floatSlow 4s ease-in-out infinite; }
+        .animate-moon { animation: pulseGlow 5s ease-in-out infinite; }
+        .star { animation: twinkle 2s infinite ease-in-out; }
+        .flame { animation: flameFlicker 0.4s infinite alternate ease-in-out; transform-origin: bottom center; }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            color: #fce7f3;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+        ::-webkit-scrollbar-thumb { background: #f472b6; border-radius: 4px; }
+    </style>
+</head>
+<body class="relative flex flex-col items-center justify-between min-h-screen text-slate-800 selection:bg-pink-300 selection:text-pink-900">
+
+    <!-- Starry & Moonlit Background Layer -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute top-10 left-10 w-2 h-2 bg-yellow-200 rounded-full star" style="animation-delay: 0s;"></div>
+        <div class="absolute top-20 right-20 w-3 h-3 bg-white rounded-full star" style="animation-delay: 0.5s;"></div>
+        <div class="absolute top-40 left-1/4 w-2 h-2 bg-pink-200 rounded-full star" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-20 left-20 w-3 h-3 bg-yellow-100 rounded-full star" style="animation-delay: 1.5s;"></div>
+        <div class="absolute bottom-40 right-1/4 w-2 h-2 bg-white rounded-full star" style="animation-delay: 0.8s;"></div>
+        <div class="absolute top-1/3 right-10 w-3 h-3 bg-pink-300 rounded-full star" style="animation-delay: 1.2s;"></div>
+        
+        <!-- Glowing Crescent Moon SVG -->
+        <div class="absolute top-6 right-6 w-24 h-24 md:w-32 md:h-32 opacity-80 animate-moon">
+            <svg viewBox="0 0 100 100" class="w-full h-full fill-amber-200">
+                <path d="M50 5 C75 5 95 25 95 50 C95 75 75 95 50 95 C68 95 82 81 82 63 C82 45 68 31 50 31 C32 31 18 45 18 63 C18 81 32 95 50 95 C25 95 5 75 5 50 C5 25 25 5 50 5 Z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Persistent Header across all pages -->
+    <header class="w-full max-w-4xl mx-auto p-4 flex items-center justify-between z-20">
+        <div class="flex items-center gap-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md px-4 py-2 rounded-full shadow-lg border border-pink-200">
+            <div class="relative w-10 h-10 rounded-full overflow-hidden border-2 border-pink-400 bg-pink-100 flex items-center justify-center shadow-inner">
+                <svg viewBox="0 0 100 100" class="w-full h-full object-cover">
+                    <circle cx="50" cy="50" r="50" fill="#fbcfe8"/>
+                    <path d="M30 45 Q50 20 70 45 Q75 75 50 80 Q25 75 30 45 Z" fill="#854d0e"/>
+                    <circle cx="50" cy="48" r="18" fill="#ffdbac"/>
+                    <path d="M25 45 Q50 15 75 45 Q70 30 50 25 Q30 30 25 45 Z" fill="#713f12"/>
+                    <circle cx="43" cy="46" r="2.5" fill="#1e293b"/>
+                    <circle cx="57" cy="46" r="2.5" fill="#1e293b"/>
+                    <path d="M48 53 Q50 56 52 53" stroke="#e11d48" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <circle cx="38" cy="51" r="3" fill="#fda4af" opacity="0.6"/>
+                    <circle cx="62" cy="51" r="3" fill="#fda4af" opacity="0.6"/>
+                </svg>
+            </div>
+            <span class="font-bold text-pink-700 dark:text-pink-300 text-sm md:text-base tracking-wide">From Evil Bia</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <div class="hidden sm:flex items-center gap-1 bg-yellow-100/90 text-yellow-800 px-3 py-1.5 rounded-full text-xs font-semibold shadow border border-yellow-300">
+                <span>🌻 Moon & Sunflowers 🌙</span>
+            </div>
+            <button onclick="toggleBackgroundMusic()" id="musicToggleBtn" class="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-400 text-white px-4 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">
+                <span id="musicIcon">🎵</span> <span id="musicText">Play Music</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Multi-Page Container -->
+    <main class="w-full max-w-3xl mx-auto px-4 py-6 flex-grow flex items-center justify-center z-10">
+
+        <!-- PAGE 1: Welcome & Readiness Check -->
+        <div id="page-1" class="page-container w-full glass-card rounded-3xl p-8 md:p-12 text-center transition-all duration-500 transform scale-100 opacity-100">
+            <div class="inline-block p-3 bg-yellow-100 rounded-full mb-6 animate-bounce shadow-md">
+                <span class="text-4xl">🌻</span>
+            </div>
+            <h1 class="serif-title text-3xl md:text-5xl font-bold text-pink-700 mb-4">Are you ready <span class="text-amber-600">"Bia g"</span>?</h1>
+            <p class="text-slate-600 mb-8 text-sm md:text-base">A magical journey filled with moonlight, sunflowers, and surprise moments awaits you! ✨</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="nextPage(2)" class="interactive-btn w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-2xl shadow-lg hover:shadow-pink-400/50 hover:scale-105 active:scale-95 transition-all text-lg">
+                    Born Ready 🚀
+                </button>
+                <button onclick="nextPage(2)" class="interactive-btn w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 font-bold rounded-2xl shadow-lg hover:shadow-yellow-400/50 hover:scale-105 active:scale-95 transition-all text-lg">
+                    Yuppp ✨
+                </button>
+            </div>
+        </div>
+
+        <!-- PAGE 2: Interrogation -->
+        <div id="page-2" class="page-container w-full glass-card rounded-3xl p-8 md:p-12 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <div class="inline-block p-3 bg-pink-100 rounded-full mb-6 animate-pulse">
+                <span class="text-4xl">🤨🌙</span>
+            </div>
+            <h2 class="serif-title text-3xl md:text-4xl font-bold text-slate-800 mb-4">Pakka g Soch Lein? 🤔</h2>
+            <p class="text-slate-600 mb-8">No going back once you enter this magical realm, Bia g!</p>
+            <button onclick="nextPage(3)" class="interactive-btn px-10 py-4 bg-gradient-to-r from-pink-600 to-rose-500 text-white font-bold rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all text-lg">
+                G pakka G 🤝💖
+            </button>
+        </div>
+
+        <!-- PAGE 3: Envelope & Birthday Letter -->
+        <div id="page-3" class="page-container w-full glass-card rounded-3xl p-6 md:p-10 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <h2 class="serif-title text-2xl md:text-3xl font-bold text-pink-700 mb-2">A Special Letter For You 💌</h2>
+            <p class="text-slate-600 text-sm mb-6">Click the golden seal to open the envelope, then click again to read your letter!</p>
+            
+            <div id="envelope-box" onclick="handleEnvelopeClick()" class="relative w-72 sm:w-96 h-56 mx-auto bg-pink-100 rounded-2xl shadow-2xl border-4 border-pink-300 cursor-pointer overflow-hidden transition-all duration-700 flex flex-col items-center justify-center group hover:scale-105">
+                <div id="envelope-flap" class="absolute top-0 left-0 w-full h-28 bg-pink-200 border-b-2 border-pink-300 origin-top transition-transform duration-700 z-10 flex items-center justify-center" style="clip-path: polygon(0 0, 100% 0, 50% 100%);">
+                </div>
+                <div id="envelope-seal" class="absolute z-20 w-16 h-16 bg-gradient-to-br from-amber-300 to-amber-600 rounded-full shadow-lg flex items-center justify-center border-2 border-amber-200 group-hover:scale-110 transition-transform">
+                    <span class="text-2xl">🌻</span>
+                </div>
+                <div class="absolute bottom-4 text-pink-700 font-bold text-sm tracking-wider animate-pulse">Click to Open Seal</div>
+            </div>
+
+            <div id="letter-content" class="hidden mt-6 bg-white/95 p-6 rounded-2xl shadow-inner border border-pink-200 text-left max-h-96 overflow-y-auto text-slate-700 text-sm md:text-base leading-relaxed space-y-4">
+                <h3 class="font-bold text-pink-600 text-lg">Happy Birthday Bia G! 🌻🌙✨</h3>
+                <p>May your day and year ahead be as bright and warm as a blooming sunflower, and as magical and serene as the moon light. You deserve all the love, happiness, joy and wonderful blessing in the world. Happy Birthday to the girl who loves the moon, collects stars in her imagination, adores sunflowers, and probably thinks the universe personally arranged itself just to match her aesthetic. 🌻🌙✨</p>
+                <p>May your life be as bright as the sun, as beautiful as a field of sunflowers, and as magical as a moonlit night. May your wishes come true, your smile never fade, and your cake be big enough to compensate for all the unnecessary drama you bring into this world. 😂🎂</p>
+                <p>I hope this year brings you endless happiness, beautiful surprises, rainy evenings, starry skies, and all the little things that make your heart happy.</p>
+                <p>And please, for once, try not to be a professional overthinker, a part-time drama queen, and a full-time little crybaby all in the same day. I know that's a lot to ask, but miracles happen on birthdays, right? 😭😂</p>
+                <p>Stay as sweet as a sunflower, as dreamy as the moon, and as wonderfully weird as you are. Never stop smiling, because honestly, the world could use a little more of your sunshine. 🌻🤍</p>
+                <p class="font-bold text-pink-700">Happy Birthday, Miss Moonlight! 🌙✨<br>May you always find a little magic in ordinary days, a thousand stars on your darkest nights, and a reason to smile even when life gets a little cloudy.</p>
+                <p class="italic text-slate-500">And remember, you're getting older, not wiser. Let's not confuse the two. 🤭🎂🌻</p>
+                
+                <div class="pt-4 text-center">
+                    <button onclick="nextPage(4)" class="interactive-btn px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-xl shadow-md hover:scale-105 transition-all">
+                        Next: Poetry Time ✨
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 4: Poetry Intro -->
+        <div id="page-4" class="page-container w-full glass-card rounded-3xl p-8 md:p-12 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <div class="inline-block p-3 bg-yellow-100 rounded-full mb-6 animate-spin" style="animation-duration: 8s;">
+                <span class="text-4xl">📜✨</span>
+            </div>
+            <h2 class="serif-title text-3xl md:text-4xl font-bold text-pink-700 mb-4">Wrote a Poetry for u Ijazat hai g? 🌙</h2>
+            <p class="text-slate-600 mb-8">Crafted specially with love, moonlight, and poetic vibes for Bia g.</p>
+            <button onclick="nextPage(5)" class="interactive-btn px-10 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 font-bold rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all text-lg">
+                Ijazat hai 🤍
+            </button>
+        </div>
+
+        <!-- PAGE 5: Urdu Poetry -->
+        <div id="page-5" class="page-container w-full glass-card rounded-3xl p-6 md:p-10 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <h2 class="serif-title text-2xl md:text-3xl font-bold text-pink-700 mb-4">Urdu Poetry For Bia G 🌙🌧️✨</h2>
+            <div class="bg-gradient-to-b from-pink-50/90 to-amber-50/90 p-6 md:p-8 rounded-2xl shadow-inner border border-pink-200 mb-6 urdu-text text-lg md:text-xl text-slate-800 space-y-4">
+                <p>“چاند کی نرمی، بارش کی صدا آپ کے نام ہو<br>
+                ہر خوبصورت لمحہ جیسے کوئی حسین شام ہو،<br>
+                دعا ہے کہ زندگی پھولوں کی طرح مہکتی رہے،<br>
+                اور ہر آنے والی صبح خوشیوں کا پیغام ہو۔ 🌙</p>
+                <p>چاندنی آپ کے آنگن میں اترتی رہے،<br>
+                بارش کی ہر بوند رحمت بن کر برستی رہے،<br>
+                خدا لکھے نصیب میں ایسی دلنشیں بہار،<br>
+                کہ زندگی کا ہر ورق خوبصورتی سے سنورتا رہے۔ 🤍</p>
+                <p>آپ کی سالگرہ پر بس اتنی سی دعا ہے،<br>
+                ہر خواب کو تعبیر، ہر لمحے کو وفا ملے،<br>
+                جس طرح چاند کو رات کی محفل عزیز ہے،<br>
+                آپ کو زندگی میں ہمیشہ محبت اور سکون مل”۔ 🌧️✨</p>
+                <div class="pt-4 border-t border-pink-200 font-bold text-pink-700 text-center">
+                    سالگرہ مبارک ہو!<br>
+                    “اللہ تعالیٰ آپ کی زندگی کو چاندنی جیسا پُرسکون، بارش جیسا رحمت بھرا، اور پھولوں جیسا خوبصورت بنائے۔ آمین۔”
+                </div>
+            </div>
+            <button onclick="nextPage(6)" class="interactive-btn px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-xl shadow-lg hover:scale-105 transition-all">
+                Next: Present Teaser 🎁
+            </button>
+        </div>
+
+        <!-- PAGE 6: Presents Teaser 1 -->
+        <div id="page-6" class="page-container w-full glass-card rounded-3xl p-8 md:p-12 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <div class="inline-block p-3 bg-pink-100 rounded-full mb-6">
+                <span class="text-4xl">🎁🤭</span>
+            </div>
+            <h2 class="serif-title text-2xl md:text-4xl font-bold text-slate-800 mb-4">U asked me for presents... Are u ready?</h2>
+            <p class="text-slate-600 mb-8">Get ready for the biggest suspense of the day!</p>
+            <button onclick="nextPage(7)" class="interactive-btn px-10 py-4 bg-gradient-to-r from-pink-600 to-rose-500 text-white font-bold rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all text-lg">
+                Born Ready 🎁✨
+            </button>
+        </div>
+
+        <!-- PAGE 7: Presents Teaser 2 (Joke) -->
+        <div id="page-7" class="page-container w-full glass-card rounded-3xl p-8 md:p-12 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <div class="inline-block p-3 bg-amber-100 rounded-full mb-6 animate-bounce">
+                <span class="text-4xl">💸😭</span>
+            </div>
+            <h2 class="serif-title text-3xl md:text-4xl font-bold text-pink-700 mb-4">"I am broke can't afford it" 🤡</h2>
+            <p class="text-slate-600 mb-8">Oops! Economics hit hard this month, Bia g!</p>
+            <button onclick="nextPage(8)" class="interactive-btn px-10 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 font-bold rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all text-lg">
+                Koi na g 😌💛
+            </button>
+        </div>
+
+        <!-- PAGE 8: Interactive Hidden Presents & Candle Cake Box -->
+        <div id="page-8" class="page-container w-full glass-card rounded-3xl p-6 md:p-10 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <h2 class="serif-title text-2xl md:text-3xl font-bold text-pink-700 mb-2">JUST kidding here u go! 🎉🎂</h2>
+            <p class="text-slate-600 text-sm mb-6">Click the mystery boxes below to open your hidden presents!</p>
+            
+            <!-- 4 Mystery Gift Boxes Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <!-- Box 1: Sunflowers -->
+                <div onclick="openGiftModal(1)" class="glass-dark p-4 rounded-2xl cursor-pointer hover:scale-105 transition-all text-center border border-pink-300 shadow-md">
+                    <span class="text-3xl block mb-2">🎁🌻</span>
+                    <h3 class="font-bold text-amber-300 text-sm">Mystery Box 1: Sunflowers</h3>
+                    <p class="text-xs text-slate-300 mt-1">Tap to unbox</p>
+                </div>
+                <!-- Box 2: Triple-Layer Cake with Interactive Candle -->
+                <div onclick="openGiftModal(2)" class="glass-dark p-4 rounded-2xl cursor-pointer hover:scale-105 transition-all text-center border border-pink-300 shadow-md">
+                    <span class="text-3xl block mb-2">🎁🎂</span>
+                    <h3 class="font-bold text-pink-300 text-sm">Mystery Box 2: Birthday Cake</h3>
+                    <p class="text-xs text-slate-300 mt-1">Tap to unbox cake</p>
+                </div>
+                <!-- Box 3: Moonlight Poem -->
+                <div onclick="openGiftModal(3)" class="glass-dark p-4 rounded-2xl cursor-pointer hover:scale-105 transition-all text-center border border-pink-300 shadow-md">
+                    <span class="text-3xl block mb-2">🎁🌙</span>
+                    <h3 class="font-bold text-yellow-200 text-sm">Mystery Box 3: Moonlight Poem</h3>
+                    <p class="text-xs text-slate-300 mt-1">Tap to unbox poem</p>
+                </div>
+                <!-- Box 4: Endless Love -->
+                <div onclick="openGiftModal(4)" class="glass-dark p-4 rounded-2xl cursor-pointer hover:scale-105 transition-all text-center border border-pink-300 shadow-md">
+                    <span class="text-3xl block mb-2">🎁💖</span>
+                    <h3 class="font-bold text-rose-300 text-sm">Mystery Box 4: Endless Joy</h3>
+                    <p class="text-xs text-slate-300 mt-1">Tap to unbox love</p>
+                </div>
+            </div>
+
+            <button onclick="nextPage(9)" class="interactive-btn px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-xl shadow-lg hover:scale-105 transition-all">
+                Next: Wishes from Family & Friends ✨
+            </button>
+        </div>
+
+        <!-- PAGE 9: Wishes from Friends & Family -->
+        <div id="page-9" class="page-container w-full glass-card rounded-3xl p-6 md:p-10 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <h2 class="serif-title text-2xl md:text-3xl font-bold text-pink-700 mb-2">Collected some wishes for u bia g 💌</h2>
+            <p class="text-slate-600 text-sm mb-6">Click each box to read special messages from your loved ones!</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 max-h-80 overflow-y-auto pr-2">
+                <div onclick="openWishModal('From Khuzaimah', 'Happy Birthday Abiha ! My sister from another Mother. Many many happy returns of the day. May Allah bless you with a long life with good health. May you get success in every step of life. Stay happy always.')" class="bg-white/90 p-4 rounded-xl border border-pink-200 shadow-sm cursor-pointer hover:bg-pink-50 transition-all text-left">
+                    <div class="font-bold text-pink-700 text-sm flex items-center justify-between">
+                        <span>From Khuzaimah</span>
+                        <span>💌</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1 truncate">Click to read message...</p>
+                </div>
+                <div onclick="openWishModal('From Shariq Waheed', 'When you came to our Lives, everything got brighter…. And it continues to get brighter with each passing year. Happy birthday 🥳')" class="bg-white/90 p-4 rounded-xl border border-pink-200 shadow-sm cursor-pointer hover:bg-pink-50 transition-all text-left">
+                    <div class="font-bold text-pink-700 text-sm flex items-center justify-between">
+                        <span>From Shariq Waheed</span>
+                        <span>💌</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1 truncate">Click to read message...</p>
+                </div>
+                <div onclick="openWishModal('From Ishmal Ejaz', 'Hey bro me ishi😉\nHappy birthday wish u best of luck✨️💐 Stay Happy and may Allah fulfil all ur dreams 👉🏻👈🏻💐✨️🎀')" class="bg-white/90 p-4 rounded-xl border border-pink-200 shadow-sm cursor-pointer hover:bg-pink-50 transition-all text-left">
+                    <div class="font-bold text-pink-700 text-sm flex items-center justify-between">
+                        <span>From Ishmal Ejaz</span>
+                        <span>💌</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1 truncate">Click to read message...</p>
+                </div>
+                <div onclick="openWishModal('From Hanzala Ejaz', 'Hello czn me hunzi🎀\nHappy Birthday. Wish u best of luck for everything u do✨️🌻')" class="bg-white/90 p-4 rounded-xl border border-pink-200 shadow-sm cursor-pointer hover:bg-pink-50 transition-all text-left">
+                    <div class="font-bold text-pink-700 text-sm flex items-center justify-between">
+                        <span>From Hanzala Ejaz</span>
+                        <span>💌</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1 truncate">Click to read message...</p>
+                </div>
+                <div onclick="openWishModal('From Ash', 'My sister, may Allah always keep you happy with your moon-like husband. Ameen! ❤️ May Allah bless him with lots of money so you can treat us all to a luxurious life on his money! 😂💸❤️')" class="bg-white/90 p-4 rounded-xl border border-pink-200 shadow-sm cursor-pointer hover:bg-pink-50 transition-all text-left">
+                    <div class="font-bold text-pink-700 text-sm flex items-center justify-between">
+                        <span>From Ash</span>
+                        <span>💌</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1 truncate">Click to read message...</p>
+                </div>
+                <div onclick="openWishModal('From Anonymous', 'Stay Blessed')" class="bg-white/90 p-4 rounded-xl border border-pink-200 shadow-sm cursor-pointer hover:bg-pink-50 transition-all text-left">
+                    <div class="font-bold text-pink-700 text-sm flex items-center justify-between">
+                        <span>From Anonymous</span>
+                        <span>💌</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-1 truncate">Click to read message...</p>
+                </div>
+            </div>
+
+            <button onclick="nextPage(10)" class="interactive-btn px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-xl shadow-lg hover:scale-105 transition-all">
+                Next: Finale & Rating 🌟
+            </button>
+        </div>
+
+        <!-- PAGE 10: Finale & Rating -->
+        <div id="page-10" class="page-container w-full glass-card rounded-3xl p-8 md:p-12 text-center hidden transition-all duration-500 transform scale-95 opacity-0">
+            <div id="rating-section">
+                <div class="inline-block p-3 bg-pink-100 rounded-full mb-4">
+                    <span class="text-4xl">🥱💤</span>
+                </div>
+                <h2 class="serif-title text-2xl md:text-3xl font-bold text-slate-800 mb-2">Hayeee bas bas You will get tired! 🤭</h2>
+                <p class="text-slate-600 mb-6 text-sm">How would you rate your birthday experience, Bia g?</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+                    <button onclick="submitRating('Bas theek tha')" class="interactive-btn px-6 py-3 bg-white border-2 border-pink-300 text-pink-700 font-bold rounded-2xl shadow hover:bg-pink-50 transition-all">
+                        Bas theek tha 🙃
+                    </button>
+                    <button onclick="submitRating('Super awesome amazing cool fantastic')" class="interactive-btn px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-2xl shadow-lg hover:scale-105 transition-all">
+                        Super awesome amazing cool fantastic 🌟🌻
+                    </button>
+                </div>
+            </div>
+
+            <div id="thankyou-section" class="hidden space-y-4">
+                <div class="inline-block p-3 bg-yellow-100 rounded-full mb-2 animate-bounce">
+                    <span class="text-4xl">🌻💖</span>
+                </div>
+                <h2 class="serif-title text-3xl md:text-4xl font-bold text-pink-700">Thankyou bia g, Again Happy Birthday ❤️✨</h2>
+                <p class="text-slate-600 text-sm">May your life shine brighter than the moon and bloom like sunflowers forever!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Reusable Modal Popup -->
+    <div id="popup-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-dark max-w-md w-full p-6 rounded-3xl text-center relative border border-pink-400 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-pink-300 hover:text-white text-xl font-bold">✕</button>
+            <div id="modal-icon" class="text-4xl mb-3">🎁</div>
+            <h3 id="modal-title" class="serif-title text-xl font-bold text-pink-300 mb-2"></h3>
+            <div id="modal-body-container">
+                <p id="modal-body" class="text-sm text-slate-200 leading-relaxed mb-6 whitespace-pre-line"></p>
+            </div>
+            <button onclick="closeModal()" class="px-6 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold rounded-xl shadow hover:scale-105 transition-all text-sm">
+                Close ✨
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full text-center py-4 text-xs text-white/80 z-10">
+        Made with 💖, Moonlights & Sunflowers for Bia G.
+    </footer>
+
+    <!-- JavaScript Sound, Animation & Navigation Logic -->
+    <script>
+        let currentPage = 1;
+        let isMusicPlaying = false;
+        let audioCtx = null;
+
+        function playClickSound() {
+            try {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15);
+                gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.15);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.15);
+            } catch (e) {
+                console.log("Audio context error:", e);
+            }
+        }
+
+        function createSparkles(e) {
+            playClickSound();
+            const x = e.clientX || (e.touches ? e.touches[0].clientX : window.innerWidth / 2);
+            const y = e.clientY || (e.touches ? e.touches[0].clientY : window.innerHeight / 2);
+
+            for (let i = 0; i < 12; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.innerHTML = i % 2 === 0 ? '✨' : '🌻';
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = x + 'px';
+                sparkle.style.top = y + 'px';
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.fontSize = (Math.random() * 12 + 10) + 'px';
+                sparkle.style.zIndex = '9999';
+                sparkle.style.transition = 'all 0.8s ease-out';
+                document.body.appendChild(sparkle);
+
+                const angle = Math.random() * Math.PI * 2;
+                const distance = Math.random() * 80 + 40;
+                const targetX = x + Math.cos(angle) * distance;
+                const targetY = y + Math.sin(angle) * distance;
+
+                setTimeout(() => {
+                    sparkle.style.transform = `translate(${targetX - x}px, ${targetY - y}px) scale(0) rotate(${Math.random() * 360}deg)`;
+                    sparkle.style.opacity = '0';
+                }, 20);
+
+                setTimeout(() => { sparkle.remove(); }, 800);
+            }
+        }
+
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('button') || e.target.closest('[onclick]')) {
+                createSparkles(e);
+            }
+        });
+
+        let musicTimer = null;
+        function toggleBackgroundMusic() {
+            isMusicPlaying = !isMusicPlaying;
+            const btnText = document.getElementById('musicText');
+            const btnIcon = document.getElementById('musicIcon');
+            
+            if (isMusicPlaying) {
+                btnText.textContent = 'Pause Music';
+                btnIcon.textContent = '⏸️';
+                startAmbientMelody();
+            } else {
+                btnText.textContent = 'Play Music';
+                btnIcon.textContent = '🎵';
+                if (musicTimer) clearInterval(musicTimer);
+            }
+        }
+
+        function startAmbientMelody() {
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+
+                const notes = [261.63, 329.63, 392.00, 523.25, 440.00, 349.23];
+                let index = 0;
+
+                musicTimer = setInterval(() => {
+                    if (!isMusicPlaying) return;
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(notes[index], audioCtx.currentTime);
+                    gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.2);
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 1.2);
+                    index = (index + 1) % notes.length;
+                }, 1500);
+            } catch (e) {
+                console.log("Music error:", e);
+            }
+        }
+
+        function nextPage(targetPage) {
+            const currentEl = document.getElementById(`page-${currentPage}`);
+            currentEl.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                currentEl.classList.add('hidden');
+                currentPage = targetPage;
+                const nextEl = document.getElementById(`page-${currentPage}`);
+                nextEl.classList.remove('hidden');
+                void nextEl.offsetWidth;
+                nextEl.classList.remove('scale-95', 'opacity-0');
+                nextEl.classList.add('scale-100', 'opacity-100');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 300);
+        }
+
+        let envelopeState = 0;
+        function handleEnvelopeClick() {
+            const flap = document.getElementById('envelope-flap');
+            const seal = document.getElementById('envelope-seal');
+            const letter = document.getElementById('letter-content');
+            const box = document.getElementById('envelope-box');
+
+            if (envelopeState === 0) {
+                flap.style.transform = 'rotateX(180deg)';
+                seal.style.transform = 'scale(0) rotate(180deg)';
+                envelopeState = 1;
+                box.querySelector('div:last-child').textContent = 'Click again to pull out the letter! 💌';
+            } else if (envelopeState === 1) {
+                box.style.display = 'none';
+                letter.classList.remove('hidden');
+                envelopeState = 2;
+            }
+        }
+
+        const modal = document.getElementById('popup-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const modalIcon = document.getElementById('modal-icon');
+        const modalBodyContainer = document.getElementById('modal-body-container');
+
+        let isCandleBlown = false;
+
+        function openGiftModal(giftId) {
+            modal.classList.remove('hidden');
+            modalBodyContainer.innerHTML = '<p id="modal-body" class="text-sm text-slate-200 leading-relaxed mb-6 whitespace-pre-line"></p>';
+            const bodyEl = document.getElementById('modal-body');
+
+            if (giftId === 1) {
+                modalIcon.textContent = '🌻';
+                modalTitle.textContent = 'Mystery Box Unboxed: Sunflowers!';
+                bodyEl.textContent = 'Here is a radiant golden field of sunflowers just for you, glowing under the afternoon sun and matching your bright smile! 🌻✨';
+            } else if (giftId === 2) {
+                modalIcon.textContent = '🎂';
+                modalTitle.textContent = 'Mystery Box Unboxed: Birthday Cake!';
+                isCandleBlown = false;
+                modalBodyContainer.innerHTML = `
+                    <div class="flex flex-col items-center justify-center space-y-3 mb-6">
+                        <!-- Triple Layer Cake with Interactive Candle -->
+                        <div class="relative w-40 h-36 bg-pink-300 rounded-t-2xl flex flex-col items-center justify-end p-2 shadow-inner border-2 border-pink-400">
+                            <!-- Candle -->
+                            <div id="candle-wrapper" onclick="blowCandle(event)" class="cursor-pointer flex flex-col items-center mb-1 group">
+                                <div id="candle-flame" class="w-4 h-6 bg-amber-400 rounded-full flame shadow-md" title="Tap to blow out candle!"></div>
+                                <div class="w-3 h-8 bg-white border border-pink-200 rounded-sm"></div>
+                            </div>
+                            <!-- Cake Layers -->
+                            <div class="w-36 h-8 bg-rose-400 rounded-md shadow flex items-center justify-center text-xs font-bold text-white">Strawberry Layer</div>
+                            <div class="w-40 h-10 bg-amber-200 rounded-md shadow flex items-center justify-center text-xs font-bold text-amber-900">Chocolate Layer</div>
+                            <div class="w-44 h-10 bg-pink-400 rounded-md shadow flex items-center justify-center text-xs font-bold text-white">Vanilla Layer</div>
+                        </div>
+                        <p id="candle-instruction-text" class="text-xs text-amber-300 font-semibold text-center mt-2">Make a wish Bia g! Tap the burning candle to blow it out to make a wish</p>
+                    </div>
+                `;
+            } else if (giftId === 3) {
+                modalIcon.textContent = '🌙';
+                modalTitle.textContent = 'Mystery Box Unboxed: Moonlight Poem';
+                bodyEl.textContent = 'Under the glow of moonlight skies,\nWhere golden sunflowers gently rise,\nA little magic comes to stay,\nTo brighten up your special day! 🌙🌻🤍';
+            } else if (giftId === 4) {
+                modalIcon.textContent = '💖';
+                modalTitle.textContent = 'Mystery Box Unboxed: Endless Love';
+                bodyEl.textContent = 'A box overflowing with hugs, smiles, joy, and sunshine to keep your overthinking at bay and your heart wonderfully happy! 🥰🌻';
+            }
+        }
+
+        function blowCandle(e) {
+            e.stopPropagation();
+            if (isCandleBlown) return;
+            isCandleBlown = true;
+
+            const flame = document.getElementById('candle-flame');
+            const instruction = document.getElementById('candle-instruction-text');
+
+            if (flame) {
+                flame.style.display = 'none';
+            }
+            if (instruction) {
+                instruction.textContent = 'Wish made! ✨🎂';
+                instruction.classList.remove('text-amber-300');
+                instruction.classList.add('text-pink-300', 'font-bold', 'text-base', 'animate-pulse');
+            }
+            createSparkles(e);
+        }
+
+        function openWishModal(sender, message) {
+            modal.classList.remove('hidden');
+            modalBodyContainer.innerHTML = '<p id="modal-body" class="text-sm text-slate-200 leading-relaxed mb-6 whitespace-pre-line"></p>';
+            modalIcon.textContent = '💌';
+            modalTitle.textContent = sender;
+            document.getElementById('modal-body').textContent = message;
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+        }
+
+        function submitRating(option) {
+            document.getElementById('rating-section').classList.add('hidden');
+            const thankyou = document.getElementById('thankyou-section');
+            thankyou.classList.remove('hidden');
+            createSparkles({ clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 });
+        }
+    </script>
+</body>
+</html>
